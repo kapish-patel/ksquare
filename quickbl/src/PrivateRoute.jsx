@@ -2,7 +2,7 @@ import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function PrivateRoute({ element: Component, redirect}) {    
-    const isAuth = true;
+    const isAuth = false;
     return isAuth ? <Component /> : <Navigate to={redirect} />;
 }
 
